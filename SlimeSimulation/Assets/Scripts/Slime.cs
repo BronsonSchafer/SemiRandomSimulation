@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Slime : MonoBehaviour
 {
-    public double moveSpeed;
-    double xDir, yDir;
-    double xSpeed = 1, ySpeed = 1;
+    float xDir= 1, yDir = 2;
+    float xSpeed = 1, ySpeed = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +15,6 @@ public class Slime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(xDir*xSpeed, yDir*ySpeed, 0)
+        transform.Translate(xDir*xSpeed, yDir*ySpeed, 0);
     }
 }
